@@ -1,0 +1,56 @@
+@mixin su-taskais($max-width) {
+  display: inline-block;
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin contentas {
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin center($direction) {
+  position: absolute;
+
+  @if $direction == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+  @if $direction == "vertical" {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+  @if $direction == "horizontal" {
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+}
+
+@mixin linear-gradient($direction, $gradients...) {
+  background: linear-gradient($direction, $gradients);
+  background: -webkit-linear-gradient($direction, $gradients);
+  background: -moz-linear-gradient($direction, $gradients);
+  background: -ms-linear-gradient($direction, $gradients);
+}

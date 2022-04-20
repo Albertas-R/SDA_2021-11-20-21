@@ -1,0 +1,79 @@
+// 1 dalis
+
+// $body-bg-color: #ffeeec;
+
+// body {
+//   background-color: $body-bg-color;
+// }
+
+// .header-title {
+//   color: $header-title-color;
+// }
+
+// .news-section {
+//   width: 100%;
+
+//   h1 {
+//     font-size: 48px;
+//   }
+
+//   p {
+//     font-size: 14px;
+//     font-style: italic;
+
+//     a {
+//       text-decoration: none;
+//     }
+//   }
+// }
+
+// 2 dalis
+
+@import "variable";
+@import "nav";
+@import "mixins";
+
+body {
+  // background-color: $body-bg-color;
+  @include linear-gradient(to right, black, blue, yellow);
+}
+
+.header-title {
+  color: $sda-color;
+}
+
+.short-note {
+  $max-width: 200px;
+  max-width: $max-width;
+  @include su-taskais($max-width);
+}
+
+.sda-input {
+  @include contentas {
+    font-weight: bold;
+    color: green;
+  }
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+
+  &.centered-horizontally {
+    @include center("horizontal");
+  }
+
+  &.centered-vertically {
+    @include center("vertical");
+  }
+
+  &.centered-horizontally-and-vertically {
+    @include center("both");
+  }
+}
+
+.rgb-gardient {
+  @include linear-gradient(to left, red, green, blue, purple);
+}

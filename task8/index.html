@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>8. Full Website</title>
+  </head>
+
+  <body>
+    <!-- Write your code here -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">LogoFX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Kodėl tik su justify-content-end GAVOSI???
+				https://getbootstrap.com/docs/4.0/utilities/flex/ -->
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kursai
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Java</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                <li><a class="dropdown-item" href="#">Phyton</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled"
+                >Events
+                <span class="badge bg-light text-dark fw-bold">5</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Kontaktai</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="py-5 bg-info">
+        <div class="container">
+          <h1 class="display-4">Hungry for IT knowledge?</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            repellendus ipsum repudiandae culpa illum totam?
+          </p>
+          <a class="btn btn-primary btn-lg" href="/pricing.html">
+            Get more info</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="text-center display-4 text-primary">
+                  <i class="ri-markup-line"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat, totam quis? Illum dicta ea doloribus.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <div class="text-center display-4 text-primary">
+                  <i class="ri-quill-pen-line"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat, totam quis? Illum dicta ea doloribus.
+                </p>
+              </div>
+              <div class="col-sm-4">
+                <div class="text-center display-4 text-primary">
+                  <i class="ri-contrast-2-line"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quaerat, totam quis? Illum dicta ea doloribus.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <h2>Lorem ipsum dolor sit amet.</h2>
+            </div>
+
+            <hr class="my-4" />
+
+            <div class="row mb-3">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/8DQeFmWUyd8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <!-- /.col-sm-8 -->
+          <div class="col-sm-4">
+            <div
+              class="alert alert-warning alert-dismissible fade show"
+              role="alert"
+            >
+              <strong>We use cookies!</strong> Lorem ipsum, dolor sit amet
+              consectetur adipisicing.
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="card">
+              <div class="card-header">Student Zone</div>
+              <div class="card-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Remember me</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary col-12">
+                    Sign-in
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="card mt-3">
+              <div class="card-header">Do you like our web site?</div>
+              <div class="card-body">
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 70%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Yes
+                  </div>
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 30%"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    No
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-around mt-3 gap-3">
+                  <button type="button" class="btn btn-success">
+                    Yes, I like it
+                  </button>
+                  <button type="button" class="btn btn-danger">
+                    No, I don't like it
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-sm-4 -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+      <div class="container">Copyright &#169; 2021.</div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

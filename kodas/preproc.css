@@ -1,0 +1,105 @@
+.sda-navbar {
+  position: relative;
+  width: 100%;
+  background-color: #661570;
+}
+.sda-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.sda-navbar ul li {
+  float: left;
+}
+.sda-navbar ul li a:link, .sda-navbar ul li a:visited {
+  display: block;
+  width: 150px;
+  padding: 8px;
+  color: #fff;
+  background-color: #661570;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sda-navbar ul li a:hover, .sda-navbar ul li a:active {
+  background-color: #55125e;
+}
+
+body {
+  background: linear-gradient(to right, black, blue, yellow);
+  background: -webkit-linear-gradient(to right, black, blue, yellow);
+  background: -moz-linear-gradient(to right, black, blue, yellow);
+  background: -ms-linear-gradient(to right, black, blue, yellow);
+}
+
+.header-title {
+  color: #55125e;
+}
+
+.short-note {
+  max-width: 200px;
+  display: inline-block;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sda-input:-moz-placeholder {
+  font-weight: bold;
+  color: green;
+}
+.sda-input::-moz-placeholder {
+  font-weight: bold;
+  color: green;
+}
+.sda-input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: green;
+}
+.sda-input:-ms-input-placeholder {
+  font-weight: bold;
+  color: green;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+}
+.box.centered-horizontally {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translate(-50%, -50%);
+}
+.box.centered-vertically {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translate(-50%, -50%);
+}
+.box.centered-horizontally-and-vertically {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+
+.rgb-gardient {
+  background: linear-gradient(to left, red, green, blue, purple);
+  background: -webkit-linear-gradient(to left, red, green, blue, purple);
+  background: -moz-linear-gradient(to left, red, green, blue, purple);
+  background: -ms-linear-gradient(to left, red, green, blue, purple);
+}
+
+/*# sourceMappingURL=preproc.css.map */
